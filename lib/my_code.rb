@@ -3,8 +3,8 @@ arg.map { |ele| yield(ele)}
 end
 
 
-def reduce(arg)
-arg.reduce(0) do |acu, ele|
+def reduce(arg, *optional)
+arg.reduce(optional) do |acu, ele|
   yield(acu,ele)
 end
 end
