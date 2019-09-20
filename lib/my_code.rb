@@ -4,5 +4,12 @@ end
 
 
 def reduce(arg, optional = nil)
-p arg[0]
+if optional
+  optional_arg = optional
+  i=0 
+else
+  optional_arg = arg[0]
+  i=1
+end
+p optional_arg
 end
