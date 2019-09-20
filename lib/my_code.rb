@@ -2,7 +2,7 @@ def map(arg)
 arg.map { |ele| yield(ele)}
 end
 
-=begin
+
 def reduce(arg, optional = nil)
 if optional
   optional_arg = optional
@@ -18,15 +18,8 @@ i+=1
 end
 optional_arg
 end
-=end
 
-def reduce(arg, optional = nil)
-  optional_arg = optional ? optional : nil
-  arg.reduce(optional_arg) do |acu, ele|
-     acu = yield(acu,ele)
-     acu
-  end
-    end
-    
+
+
     
     
