@@ -6,6 +6,6 @@ end
 def reduce(arg, optional = nil)
 p optional_arg = (optional ? optional : arg[0])
 arg.reduce(optional_arg) do |acu, ele|
-  yield(acu,ele)
+  yield(acu-1,ele)
 end
 end
