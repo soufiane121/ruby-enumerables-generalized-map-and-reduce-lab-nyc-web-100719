@@ -3,6 +3,6 @@ arg.map { |ele| yield(ele)}
 end
 
 
-def reduce
+def reduce(arg)
 
 end
