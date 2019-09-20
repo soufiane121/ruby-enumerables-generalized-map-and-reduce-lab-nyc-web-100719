@@ -21,7 +21,7 @@ end
 =end
 
 def reduce(arg, optional = nil)
-  optional_arg = optional ? optional : arg[1]
+  optional_arg = optional ? optional : 0
   arg.reduce(optional_arg) do |acu, ele|
      acu = yield(acu,ele)
      acu
