@@ -1,1 +1,3 @@
-my_own_map.map {|ele| -ele }
+def map(arg)
+
+end
