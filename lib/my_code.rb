@@ -4,5 +4,5 @@ end
 
 
 def reduce(arg, optional = nil)
-p optional
+p optional ? optional : arg[0]
 end
