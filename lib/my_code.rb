@@ -4,7 +4,7 @@ end
 
 
 def reduce(arg, optional = nil)
-optional_arg = (optional ? optional : arg[0])
+p optional_arg = (optional ? optional : arg[0])
 arg.reduce(optional_arg) do |acu, ele|
   yield(acu,ele)
 end
