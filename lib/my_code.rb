@@ -20,7 +20,7 @@ end
 =end
 
 def reduce(arg, optional = nil)
-   arg.reduce(optional=0) do |acu,ele|
+   arg.reduce(optional=0 || 100) do |acu,ele|
      yield(acu,ele)
    end
     end
