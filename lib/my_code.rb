@@ -11,5 +11,8 @@ else
   optional_arg = arg[0]
   i=1
 end
-p optional_arg
+while i < arg.length
+   yield(optional_arg, arg[i])
+   i+=1
+end
 end
