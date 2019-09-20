@@ -1,3 +1,3 @@
 def map(arg)
-yield(arg)
+arg.map { |ele| yield(ele)}
 end
