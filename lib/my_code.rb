@@ -12,7 +12,8 @@ else
   i=1
 end
 while i < arg.length
-   yield(optional_arg, arg[i])
+   optional_arg = yield(optional_arg, arg[i])
    i+=1
 end
+optional_arg
 end
