@@ -14,6 +14,7 @@ end
 while i <arg.length
 optional_arg = yield(optional_arg,arg[i])
 i+=1
+
 end
 optional_arg
 end
